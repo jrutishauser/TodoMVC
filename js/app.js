@@ -20,8 +20,9 @@
 	//	$('#todo-list > li').toggleClass('completed');
 	//	$('.toggle').toggleattr('checked', true);	
 //	});	
-	$('#todo-list').on('dblclk', 'li', function(e){
-		$(this).closest('.edit').removeClass('hidden');
+	$('#todo-list li').on('dblclick', function(e){
+		$(this).closest('.edit').removeClass('edit');
+		$(this).closest('label').hide();
 	});	
 	
 	
