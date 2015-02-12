@@ -6,8 +6,8 @@
 			var newTask = $('#new-todo').val();	
 			console.log(newTask);
 			$('#todo-list').append('<li><div class="view"><input class="toggle" type="checkbox">' +
-				'<label>Buy a unicorn</label><button class="destroy"></button></div>' +
-				'<input class="edit" value="Rule the web"></li>');	
+				'<label>' + newTask + '</label><button class="destroy"></button></div>' +
+				'<input class="edit" value="' + newTask + '"></li>');	
 		}
 	});		
 	
